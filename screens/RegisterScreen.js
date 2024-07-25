@@ -16,8 +16,6 @@ const RegisterScreen = ({ navigation }) => {
         style={styles.input}
         placeholder="Name"
         placeholderTextColor="#8E8E93"
-        value={email}
-        onChangeText={setEmail}
         keyboardType="email-address"
         autoCapitalize="none"
       />
