@@ -32,7 +32,7 @@ const ProductListScreen = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate('ProductDetails', { product: item })}>
         <Image source={{ uri: item.image }} style={styles.image} />
         <Text style={styles.productName}>{item.name}</Text>
-        <Text style={styles.productPrice}>₹{item.price}</Text>
+        <Text style={styles.productPrice}>${item.price}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.buyNowButton} onPress={() => handleBuyNow(item)}>
         <Text style={styles.buyNowButtonText}>Buy Now</Text>
